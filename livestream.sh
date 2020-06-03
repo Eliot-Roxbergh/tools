@@ -6,5 +6,6 @@ if [ "$#" -ne "1" ]; then
 fi
 
 QUALITY="best"
+#QUALITY="worst"
 
-youtube-dl "${1}"  ${QUALITY} -o - 2>/dev/null | vlc -vvv - &>/dev/null
+youtube-dl "${1}"  -f ${QUALITY} -o - 2>/dev/null | vlc -vvv - &>/dev/null
