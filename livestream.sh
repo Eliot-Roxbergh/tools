@@ -8,4 +8,5 @@ fi
 QUALITY="best"
 #QUALITY="worst"
 
-youtube-dl "${1}"  -f ${QUALITY} -o - 2>/dev/null | vlc -vvv - &>/dev/null
+echo 'TODO!! NOT TESTED FOR yt-dlp'
+yt-dlp "${1}"  -f ${QUALITY} -o - 2>/dev/null | vlc -vvv - &>/dev/null
